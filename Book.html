@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Online Bookstore Inventory Management</h2>
+        <div id="output"></div>
+        <form id="addBookForm">
+            <h3>Add New Book</h3>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" class="form-control" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" class="form-control" id="price" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Add Book</button>
+        </form>
+
+        <h3>Update Book Price</h3>
+        <form id="updateBookPriceForm">
+            <div class="form-group">
+                <label for="updateTitle">Title:</label>
+                <select class="form-control" id="updateTitle" name="updateTitle" required>
+                
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="newPrice">New Price:</label>
+                <input type="number" class="form-control" id="newPrice" name="newPrice" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Update Price</button>
+        </form>
+
+        <h3>Update Book Quantity</h3>
+        <form id="updateBookQuantityForm">
+            <div class="form-group">
+                <label for="updateQuantityTitle">Title:</label>
+                <select class="form-control" id="updateQuantityTitle" name="updateQuantityTitle" required>
+                 
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="newQuantity">New Quantity:</label>
+                <input type="number" class="form-control" id="newQuantity" name="newQuantity" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Update Quantity</button>
+        </form>
+
+        <h3>Books</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="BookTableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="Bookscript.js"></script>
+</body>
+</html>
