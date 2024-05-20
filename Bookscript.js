@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
             BookTableBody.innerHTML += row;
         });
     }
-
+// Update Function
     function updateTitleOptions() {
         updateTitleSelect.innerHTML = '<option value="" disabled selected>Select Title</option>';
         updateQuantityTitleSelect.innerHTML = '<option value="" disabled selected>Select Title</option>';
