@@ -1,3 +1,5 @@
+
+//script.js
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('registrationForm');
     const unameInput = document.getElementById('uname');
